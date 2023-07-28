@@ -1,0 +1,664 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 1290px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #000;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 共通パーツ */
+p {
+    font-size: 0.8rem;
+}
+
+section {
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.inner {
+    padding: 0 4%;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.0rem;
+    padding-bottom: 40px;
+}
+
+.section-text {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.btn {
+   margin: 0 auto;
+}
+
+.contact-btn {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 50px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #000;
+    transition: all 0.3s;
+}
+
+.btn a::after {
+    content: "＞";
+    display: inline-block;
+    margin-left: 20px; /* 必要に応じてマージンを調整 */
+  }
+
+.contact-btn:hover {
+    color: #000;
+    background-color: #fff;
+    border:1px solid #000;
+}
+
+/*------ mainvisual------ */
+.mainvisual {
+    position: relative;
+}
+
+.bg-pic {
+    text-align: center;
+}
+
+.mainvisual .btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10%;
+}
+
+
+
+/*------ gallery------ */
+
+.img-contents {
+    text-align: center;
+}
+
+.img-contents img {
+    margin-right: 4%;
+}
+
+/*------ concept------ */
+.concept-img {
+    background-image: url(img/en@2x.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 370px;
+    margin: -300px auto -60px;
+    opacity: 0.5;
+}
+
+.concept-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*------ seen------ */
+
+.flex-contents {
+    display: flex;
+    margin-top: 40px;
+}
+
+.flex-box1 {
+    padding: 0 4%;
+}
+
+.seen-device-title {
+    position: relative;
+    writing-mode: vertical-rl;
+    -webkit-text-stroke: 1px #000; /* ベンダープレフィックス */
+    color: transparent;
+    font-size: 4.0rem;
+    font-weight: bold;
+  }
+
+  .seen-t1 {
+    padding-top: 80px;
+    margin-left: 40px;
+  }
+
+  .title-sub {
+    padding-top: 20px;
+    font-size: 1.0rem;
+    letter-spacing: 0.4rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-decoration: underline;
+    text-underline-position: left;
+ }
+
+  /* .seen-title::after {
+    content: "Seen";
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-orientation: sideways;
+ }
+
+ .seen-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -26px;
+    height: 62px;
+    width: 1px;
+    background-color: black; 
+  } */
+
+  .seen-main {
+    position: relative;
+  }
+  
+  .see-mainbg {
+    position: absolute;
+    bottom: -150px;
+    right: -300px;
+    width: 600px;
+    height: 500px;
+    border-radius: 16px;
+    background-color: #fbe8e8;
+    z-index: -1;
+  } 
+
+  /* .flex-box2 {
+    margin-top: 100px;
+  } */
+ .text-bg {
+    background-color: #fbe8e8;
+ }
+
+ /* .pc-column {
+    display: inline;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+ } */
+  
+.img-area {
+    display: flex;
+    margin: 0 auto;
+    width: 48%;
+}
+
+.img-area img {
+    margin-right: 8%;
+}
+
+.seen-text {
+    line-height: 2.0;
+    padding: 0 8%;
+    margin-top: 0;
+    width: 48%;
+}
+
+.seen-main {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  
+  .text-overlay p {
+    margin: 0;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+
+
+
+
+/*------ device------スマホのみ表示 */
+.device {
+    position: relative;
+}
+
+.device-title {
+    position: relative;
+    padding-left: 280px;
+}
+
+.device-mainbg {
+    position: absolute;
+    top: 104px;
+    left: 38px;
+    width: 338px;
+    height: 222px;
+    border-radius: 16px;
+    background-color: #fbe8e8;
+    z-index: -1;
+}
+
+.device-text1.sp-show {
+    position: absolute;
+    font-size: 1.0rem;
+    top: 329px;
+    left: 40px;
+    letter-spacing: 0.2rem;
+}
+
+.device-text2.sp-show {
+    position: absolute;
+    font-size: 1.0rem;
+    top: 361px;
+    left: 40px;
+    letter-spacing: 0.2rem;
+}
+
+
+
+/*------ Youtube------ */
+  .youtube-inner img{
+    display: block;
+    margin: 0 auto;
+  }
+
+
+/*------ license------ */
+/*------ fee-- */
+.license,
+.fee {
+    position: relative;
+    padding: 0 4%;
+}
+.license-inner,
+.fee-inner {
+    background-color: #fbe8e8;
+    border-radius: 16px;
+    max-width: 800px;
+    height: 240px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.box-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.license-inner .box-1 .box-text {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.license-inner .box-2 {
+    padding-bottom: 10px;
+}
+.box-flex {
+    display: flex;
+    padding-top: 30px;
+}
+
+.box-flex .box-text {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.box-flex .box-1,
+.box-flex .box-2 {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.box-flex .box-title {
+    margin-right: 10px;
+
+}
+
+.c2-1 {
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 20%;
+    width: 12%;
+}
+
+.f2-other {
+    position: absolute;
+    z-index: 10;
+    top: 90%;
+    left: 70%;
+}
+
+.f2-g {
+    position: absolute;
+    z-index: 10;
+    top: 4%;
+    left: 20%;
+   
+}
+
+
+/*------ flow------ */
+
+.flow-flex {
+    text-align: center;
+}
+
+.flow-flex img{
+    margin-left: 4%;
+}
+
+
+/*------ feature------ */
+
+.feature {
+    margin-top: 40px;
+    background-color: #fbe8e8;
+    height: 600px;
+}
+
+
+
+/*------ contact------ */
+.contact-inner {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.tell-img {
+    background-image: url(img/tell-bg.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+.contact .tell {
+    font-size: 3.0rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+/*------------------ レスポンシブ------------------------ */
+.sp-none {
+    display: block;
+}
+
+.sp-show {
+    display: none;
+}
+
+@media screen and (max-width: 710px) {
+    .img-contents img {
+        margin-right: 2%;
+    }
+
+    .flex-box2 {
+       flex-direction: column-reverse;
+    }
+
+    .seen-text,
+    .img-area {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    
+}
+
+@media screen and (max-width: 630px) {
+
+    .img-contents img {
+        margin-right: 1%;
+    }
+
+    .contact-btn {
+        padding: 5px 30px;
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    .sp-none {
+        display: none;
+    }
+
+    .sp-show {
+        display: block;
+    }
+    
+
+    section {
+        padding-top: 40px;
+    }
+
+    .flex-contents{
+        flex-direction: column-reverse;
+    }
+
+    .seen-title,
+    .seen-title::after,
+    .text-overlay {
+        writing-mode: horizontal-tb;
+    }
+
+    .seen-title::before {
+     display: none;
+    }
+
+    .seen-title::after {
+        border-bottom: 1px solid #000;
+        right: 60px;
+    }
+
+    .see-mainbg {
+    bottom: 70px;
+    right: -70px;
+    width: 480px;
+    height: 300px;
+    }
+
+
+    .seen-text.sp-show {
+        font-weight: bold;
+        margin-left: 40px;
+        margin-top: 100px;
+    }
+
+    .text-bg {
+        width: 300px;
+    }
+
+
+    .box-flex {
+        display: block;
+        padding-top: 20px;
+        
+    }
+
+    .box-text{
+        margin: 0 auto;
+    }
+    .box-2 .box-text {
+        margin-right: 40px;
+    }
+    .fee-inner {
+        height: 180px;
+    }
+
+    }
+
+    .s390-show {
+        display: none;
+    } 
+
+    @media screen and (max-width: 390px) {
+           .s390-none  {
+                display: none;
+           }
+
+           .s390-show {
+                display: block;
+           }
+
+        .section-title {
+            padding-bottom: 20px;
+        }
+
+        .contact-btn {
+            padding: 2px 15px;
+            font-size: 0.8rem;
+        }
+
+        .concept-img {
+            margin-bottom: -20px;
+        }
+
+        .see-mainbg {
+            bottom: 40px;
+            right: -16px;
+            width: 338px;
+            height: 222px;
+        }
+
+        .seen {
+            position: relative;
+            padding: 0;
+        }
+
+        .seen-text1.sp-show {
+            position: absolute;
+            font-size: 1.0rem;
+            top: 249px;
+            left: 40px;
+            letter-spacing: 0.2rem;
+        }
+
+        .seen-text2.sp-show {
+            position: absolute;
+            font-size: 1.0rem;
+            top: 281px;
+            left: 40px;
+            letter-spacing: 0.2rem;
+        }
+
+        .text-bg {
+            width: 320px;
+        }
+
+        .img-area img {
+            margin: 0 auto 4%;
+        }
+
+        .license,
+        .fee {
+            padding-top: 20px;
+        }
+
+        .c2-1 {
+            position: absolute;
+            z-index: 10;
+            top: 12%;
+            left: 10%;
+            width: 30%;
+        }
+
+        .f2-other {
+            position: absolute;
+            z-index: 10;
+            top: 90%;
+            left: 50%;
+            width: 60%;
+        }
+        
+        .f2-g {
+            position: absolute;
+            z-index: 10;
+            top: 14%;
+            left: 8%;
+            width: 20%;
+        }
+        .seen-device-title {
+            writing-mode: horizontal-tb;
+            letter-spacing: 0.4rem;
+            font-size: 3.0rem;
+        }
+
+        .title-sub {
+            writing-mode: horizontal-tb;
+            padding-top: 0;
+        }
+
+        .license-inner .box-1 .box-text,
+        .box-flex .box-text{
+            font-size: 1.8rem;
+            font-weight: bold;
+
+        }
+        .seen-text1.sp-show, 
+        .seen-text2.sp-show,
+        .device-text1.sp-show, 
+        .device-text2.sp-show {
+            left: 60px;
+        }
+
+        .s390-flex{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .s390-f2 {
+            justify-content: end;
+        }
+
+        .s390-small {
+            font-size: 2.0rem;
+        }
+        .flow-flex img  {
+            margin: 0;
+        }
+
+        .feature  {
+            height: 400px;
+        }
+
+        .contact .tell {
+            font-size: 2.0rem;
+    }
+}
